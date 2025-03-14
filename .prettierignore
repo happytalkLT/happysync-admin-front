@@ -9,6 +9,9 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+package-lock.json
+package.json
+yarn.lock
 
 # testing
 /coverage
@@ -39,6 +42,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-.idea
-

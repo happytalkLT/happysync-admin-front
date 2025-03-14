@@ -1,0 +1,38 @@
+.header_container {
+  height: var(--layout-collapsed-spacing);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--navigation-menu-space);
+}
+
+.header_navigation_open_button {
+  width: var(--navigation-menu-size);
+  height: var(--navigation-menu-size);
+  padding: var(--navigation-icon-space);
+  border-radius: 50%;
+}
+
+.header_navigation_open_button > svg {
+  width: var(--navigation-icon-size);
+  height: var(--navigation-icon-size);
+}
+
+.header_navigation_open_button:hover {
+  background-color: var(--third-black);
+}
+
+.header_navigation_open_button:active {
+  background-color: var(--secondary-black);
+}
+
+.logo {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  user-select: none;
+}

@@ -1,0 +1,122 @@
+.container {
+  width: var(--full-size);
+  height: var(--full-size);
+  background: linear-gradient(to right bottom, var(--brand-secondary-color), var(--brand-primary-color)),
+  linear-gradient(to left top, #ff7e5f, #feb47b);
+  position: relative;
+}
+
+.authorization_wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  max-width: 425px;
+  border-radius: var(--radius-1);
+  background-color: var(--background-color);
+  border: 1px solid var(--line-color);
+  box-shadow: var(--wrapper-box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-5);
+}
+
+.logo {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.google_login_button {
+  -webkit-user-drag: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.label {
+  color: var(--text-primary-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.description {
+  color: var(--text-secondary-color);
+  font-size: 12px;
+}
+
+.division {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.division::before,
+.division::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--text-primary-color);
+}
+
+.input_wrapper {
+  max-width: 270px;
+  max-height: 38px;
+  height: 100%;
+  width: 100%;
+  padding: 0 32px;
+  border-bottom: 2px solid var(--brand-primary-color);
+  position: relative;
+}
+
+.input_block {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.input_before_icon {
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  fill: var(--brand-primary-color);
+}
+.input_after_icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  fill: var(--text-third-color);
+  cursor: pointer;
+}
+
+.login_button{
+  max-width: 270px;
+  max-height: 38px;
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--secondary-black);
+  box-shadow: var(--block-box-shadow);
+
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white);
+
+  cursor: pointer;
+
+  border-radius: var(--radius-1);
+}
+
+.login_button:hover{
+  background-color: var(--brand-primary-color);
+  color: var(--text-primary-color);
+}

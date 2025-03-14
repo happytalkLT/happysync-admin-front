@@ -1,0 +1,27 @@
+.layout_container {
+  height: calc(var(--full-size) - var(--layout-collapsed-spacing));
+  top: var(--layout-collapsed-spacing);
+  background-color: var(--background-layout-color);
+  position: relative;
+  padding: var(--space-5);
+  overflow: auto;
+}
+
+.layout_expanded {
+  width: calc(var(--full-size) - var(--layout-expanded-spacing)); /* Navigation이 열렸을 때 Layout 크기 조정 */
+  left: var(--layout-expanded-spacing);
+  transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+.layout_collapsed {
+  width: calc(var(--full-size) - var(--layout-collapsed-spacing)); /* Navigation이 닫혀 있을 때 */
+  left: var(--layout-collapsed-spacing);
+  transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+.layout_title{
+  font-size: 20px;
+  color: var(--text-primary-color);
+  font-weight: bold;
+  margin-bottom: var(--space-3);
+}
